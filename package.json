@@ -1,7 +1,8 @@
 {
   "name": "learning",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": ".eslintrc.js",
   "dependencies": {},
   "devDependencies": {
     "eslint": "^7.8.1",
@@ -23,6 +24,5 @@
   "bugs": {
     "url": "https://github.com/philevalex/learning/issues"
   },
-  "homepage": "https://github.com/philevalex/learning#readme",
-  "description": ""
+  "homepage": "https://github.com/philevalex/learning#readme"
 }
