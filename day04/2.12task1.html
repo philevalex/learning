@@ -1,9 +1,11 @@
 <html>
   <body>
     <script>
-      for (let i = 0; i < 3; i++) {
-        alert(i);
-      }
+      let num;
+
+      do {
+        num = prompt("Введите число, большее 100?", 0);
+      } while (num <= 100 && num);
     </script>
   </body>
 </html>
