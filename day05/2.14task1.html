@@ -1,10 +1,12 @@
 <html>
   <body>
     <script>
-      function showMessage(from, text = "текст не добавлен") {
-        alert(from + ": " + text);
+      let age = prompt(`Введите свой возраст`, "");
+      function checkAge(age) {
+        return age > 18 ? true : confirm("Родители разрешили?");
       }
-      showMessage("Аня");
+      checkAge(age);
+      alert(age);
     </script>
   </body>
 </html>
