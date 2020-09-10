@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script>
+      let x = prompt(`Введите "x"`, "");
+      let n = prompt(`Введите "n"`, "");
+      function pow(x, n) {
+        let result = x;
+        let i = 1;
+        for (i; i < n; i++) {
+          result *= x;
+        }
+        return result;
+      }
+      console.log(pow(x, n));
+    </script>
+  </body>
+</html>
