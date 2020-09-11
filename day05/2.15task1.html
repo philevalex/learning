@@ -1,7 +1,10 @@
 <html>
   <body>
     <script>
-
+      let question = prompt(`Вы согласны?`, "");
+      let ask = true
+        ? () => alert("Вы согласились.")
+        : () => alert("Вы отменили выполнение.");
     </script>
   </body>
 </html>
