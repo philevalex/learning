@@ -8,15 +8,15 @@
     <div class="top2-menu-right">right in top2</div>
   </div>
   <div class="main">
-    <div class="main-right">main right</div>
-    <div class="main-left">
-      <div class="main-left-top">
-        <div class="main-left1">main left 1</div>
-        <div class="main-left2">main left 2</div>
+    <div class="main-left">main left</div>
+    <div class="main-right">
+      <div class="main-right-top">
+        <div class="main-right1">main right 1</div>
+        <div class="main-right2">main right 2</div>
       </div>
-      <div class="main-left-bottom">
-        <div class="main-left3">main left 3</div>
-        <div class="main-left4">main left 4</div>
+      <div class="main-right-bottom">
+        <div class="main-right3">main right 3</div>
+        <div class="main-right4">main right 4</div>
       </div>
     </div>
   </div>
@@ -34,6 +34,7 @@
   .container {
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
   .top1-menu {
     display: flex;
@@ -51,54 +52,54 @@
     display: flex;
     background-color: thistle;
   }
-  .main-right {
+  .main-left {
     display: flex;
     flex: 1 1 0;
   }
-  .main-left {
+  .main-right {
     display: flex;
     flex: 0 0 400px;
     flex-direction: column;
     background-color: peachpuff;
   }
-  .main-left-top {
+  .main-right-top {
     display: flex;
     flex-direction: row;
     flex: 0 0 200px;
   }
-  .main-left-bottom {
+  .main-right-bottom {
     display: flex;
     flex-direction: row;
     flex: 0 0 200px;
   }
-  .main-left1 {
+  .main-right1 {
     display: flex;
     flex: 0 0 200px;
   }
-  .main-left2 {
+  .main-right2 {
     display: flex;
     flex: 0 0 200px;
   }
-  .main-left3 {
+  .main-right3 {
     display: flex;
     flex: 0 0 200px;
   }
-  .main-left4 {
+  .main-right4 {
     display: flex;
     flex: 0 0 200px;
   }
   .bottom {
     display: flex;
-    background-color: antiquewhite;
-    padding: 50px;
-    padding-left: 15px;
+    flex: 1 1 0;
   }
   .bottom-left {
+    background-color: antiquewhite;
     display: flex;
     flex: 1 1 0;
   }
   .bottom-right {
+    background-color: tan;
     display: flex;
-    flex: 0 0 200;
+    flex: 0 0 200px;
   }
 </style>
