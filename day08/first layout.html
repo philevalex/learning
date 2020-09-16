@@ -1,0 +1,104 @@
+<div class="container">
+  <div class="top1-menu">
+    <div class="top1-menu-center">center in top1</div>
+    <div class="top1-menu-right">right in top1</div>
+  </div>
+  <div class="top2-menu">
+    <div class="top2-menu-center">center in top2</div>
+    <div class="top2-menu-right">right in top2</div>
+  </div>
+  <div class="main">
+    <div class="main-right">main right</div>
+    <div class="main-left">
+      <div class="main-left-top">
+        <div class="main-left1">main left 1</div>
+        <div class="main-left2">main left 2</div>
+      </div>
+      <div class="main-left-bottom">
+        <div class="main-left3">main left 3</div>
+        <div class="main-left4">main left 4</div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="bottom-left">bottom left</div>
+    <div class="bottom right">bottom right</div>
+  </div>
+</div>
+
+<style>
+  body {
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .top1-menu {
+    display: flex;
+    background-color: white;
+    padding: 50px;
+    padding-left: 15px;
+  }
+  .top2-menu {
+    display: flex;
+    background-color: blueviolet;
+    color: white;
+    padding: 15px;
+  }
+  .main {
+    display: flex;
+    background-color: thistle;
+  }
+  .main-right {
+    display: flex;
+    flex: 1 1 0;
+  }
+  .main-left {
+    display: flex;
+    flex: 0 0 400px;
+    flex-direction: column;
+    background-color: peachpuff;
+  }
+  .main-left-top {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 200px;
+  }
+  .main-left-bottom {
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 200px;
+  }
+  .main-left1 {
+    display: flex;
+    flex: 0 0 200px;
+  }
+  .main-left2 {
+    display: flex;
+    flex: 0 0 200px;
+  }
+  .main-left3 {
+    display: flex;
+    flex: 0 0 200px;
+  }
+  .main-left4 {
+    display: flex;
+    flex: 0 0 200px;
+  }
+  .bottom {
+    display: flex;
+    background-color: antiquewhite;
+    padding: 50px;
+    padding-left: 15px;
+  }
+  .bottom-left {
+    display: flex;
+    flex: 1 1 0;
+  }
+  .bottom-right {
+    display: flex;
+    flex: 0 0 200;
+  }
+</style>
