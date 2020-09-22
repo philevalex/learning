@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5.4task2</title>
+  </head>
+  <body>
+    <script>
+      let styles = ["Джаз", "Блюз"];
+      styles.push("Рок-н-ролл");
+      styles[Math.floor(styles.length - 1) / 2] = "Классика";
+      alert(styles.shift(0));
+      styles.unshift("Реп", "Регги");
+
+      for (let i = 0; i < styles.length; i++) {
+        alert(styles[i]);
+      }
+    </script>
+  </body>
+</html>
