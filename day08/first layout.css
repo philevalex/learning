@@ -61,7 +61,7 @@ body {
 }
 .bottom {
   display: flex;
-  height: 100%;
+  height: 100vh;
 }
 .bottom-left {
   background-color: antiquewhite;
