@@ -1,105 +1,38 @@
-<div class="container">
-  <div class="top1-menu">
-    <div class="top1-menu-center">center in top1</div>
-    <div class="top1-menu-right">right in top1</div>
-  </div>
-  <div class="top2-menu">
-    <div class="top2-menu-center">center in top2</div>
-    <div class="top2-menu-right">right in top2</div>
-  </div>
-  <div class="main">
-    <div class="main-left">main left</div>
-    <div class="main-right">
-      <div class="main-right-top">
-        <div class="main-right1">main right 1</div>
-        <div class="main-right2">main right 2</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first layout</title>
+    <link rel="stylesheet" type="text/css" href="first layout.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top1-menu">
+        <div class="top1-menu-center">center in top1</div>
+        <div class="top1-menu-right">right in top1</div>
       </div>
-      <div class="main-right-bottom">
-        <div class="main-right3">main right 3</div>
-        <div class="main-right4">main right 4</div>
+      <div class="top2-menu">
+        <div class="top2-menu-center">center in top2</div>
+        <div class="top2-menu-right">right in top2</div>
+      </div>
+      <div class="main">
+        <div class="main-left">main left</div>
+        <div class="main-right">
+          <div class="main-right-top">
+            <div class="main-right1">main right 1</div>
+            <div class="main-right2">main right 2</div>
+          </div>
+          <div class="main-right-bottom">
+            <div class="main-right3">main right 3</div>
+            <div class="main-right4">main right 4</div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="bottom-left">bottom left</div>
+        <div class="bottom-right">bottom right</div>
       </div>
     </div>
-  </div>
-  <div class="bottom">
-    <div class="bottom-left">bottom left</div>
-    <div class="bottom-right">bottom right</div>
-  </div>
-</div>
-
-<style>
-  body {
-    margin: 0;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  .top1-menu {
-    display: flex;
-    background-color: white;
-    padding: 50px;
-    padding-left: 15px;
-  }
-  .top2-menu {
-    display: flex;
-    background-color: blueviolet;
-    color: white;
-    padding: 15px;
-  }
-  .main {
-    display: flex;
-    background-color: thistle;
-  }
-  .main-left {
-    display: flex;
-    flex: 1 1 0;
-  }
-  .main-right {
-    display: flex;
-    flex: 0 0 400px;
-    flex-direction: column;
-    background-color: peachpuff;
-  }
-  .main-right-top {
-    display: flex;
-    flex-direction: row;
-    flex: 0 0 200px;
-  }
-  .main-right-bottom {
-    display: flex;
-    flex-direction: row;
-    flex: 0 0 200px;
-  }
-  .main-right1 {
-    display: flex;
-    flex: 0 0 200px;
-  }
-  .main-right2 {
-    display: flex;
-    flex: 0 0 200px;
-  }
-  .main-right3 {
-    display: flex;
-    flex: 0 0 200px;
-  }
-  .main-right4 {
-    display: flex;
-    flex: 0 0 200px;
-  }
-  .bottom {
-    display: flex;
-    height: 100%;
-  }
-  .bottom-left {
-    background-color: antiquewhite;
-    display: flex;
-    flex: 1 1 0;
-  }
-  .bottom-right {
-    background-color: tan;
-    display: flex;
-    flex: 0 0 400px;
-  }
-</style>
+  </body>
+</html>
