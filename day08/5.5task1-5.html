@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function camelize(str) {
+        return str
+          .split("-")
+          .map((word, index) =>
+            index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+          )
+          .join("");
+      }
+      console.log(camelize("list-style-image"));
+      console.log(camelize("-webkit-transition"));
+
+      function filterRange(arr, a, b) {
+        return arr.filter((item) => a <= item && item <= b);
+      }
+      let arr = [5, 3, 8, 1];
+      let filtered = filterRange(arr, 1, 4);
+      console.log(filtered);
+      console.log(arr);
+
+      function filterRangeInPlace(arr, a, b) {
+        for (let i = 0; i < arr.length; i++) {
+          let val = arr[i];
+          if (val < a || val > b) {
+            arr.splice(i, 1);
+            i--;
+          }
+        }
+      }
+      let arr1 = [5, 3, 8, 1];
+      filterRangeInPlace(arr1, 1, 4);
+      console.log(arr1);
+
+      let arr2 = [5, 2, 1, -10, 8];
+      arr2.sort((a, b) => b - a);
+      console.log(arr2);
+
+      function copySorted(arr3) {
+        return arr3.slice().sort();
+      }
+      let arr3 = ["HTML", "JavaScript", "CSS"];
+      let sorted = copySorted(arr3);
+      console.log(sorted);
+      console.log(arr3);
+    </script>
+  </body>
+</html>
